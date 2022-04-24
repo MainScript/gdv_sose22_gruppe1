@@ -57,7 +57,7 @@ connectivity = 8
 images = []
 
 # gets all .jpg images from specified folder
-path = "./images"
+path = "./02/images"
 
 for root, dirs, files in os.walk(path):
     for file in files:
