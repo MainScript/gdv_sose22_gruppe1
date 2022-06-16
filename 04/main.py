@@ -7,9 +7,9 @@ from GDV_TrainingSet import Descriptor, TrainingSet
 img_path = "./04/images/image1.jpg"                         # location of the input image
 tile_size = (16, 16)                                        # (height, width) size of the tiles
 saveResult = True                                           # saves the resulting image
-saveTo = "./04/images/result.png"                           # where to save the resulting image to
+saveResultTo = "./04/images/result.png"                           # where to save the resulting image to
 
-createNewTrainingData = False                               # creates and saves new training data if true
+createNewTrainingData = True                               # creates and saves new training data if true
 descriptor = Descriptor.TINY_COLOR32                        # descriptor used for creating the new training data
 trainingDataFolder = './04/data/101_ObjectCategories/'      # location of the data set used for creating the training data
 trainingDataFile = './04/data/data.npz'                     # location of the training data file
@@ -93,7 +93,7 @@ result = createImageFromTiles(result_tiles, tile_size, input_img.shape)
 
 # save image
 if saveResult:
-    cv2.imwrite(saveTo, result)
+    cv2.imwrite(saveResultTo, result)
 
 # show input and resulting image
 cv2.imshow("tile_match", result)
