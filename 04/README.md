@@ -25,26 +25,7 @@ Python Version 3.10.2
 
 
 ## Example Images
-### Example 1 - Input image
-<div style="width: 500px ; height: 500px">
-
-![Example 1 input](/04/images/example1.jpg "Example 1 - Input (1200 x 1200)")
-</div>
-
-### Example 1 - Result (Tile Size = 32)
-<div style="width: 500px ; height: 500px">
-
-![Example 1 result 32](/04/images/example1result32.png "Example 1 - Result (Tile Size = 32)")
-</div>
-
-### Example 1 - Result (Tile Size = 16)
-<div style="width: 500px ; height: 500px">
-
-![Example 1 result 16](/04/images/example1result16.png "Example 1 - Result (Tile Size = 16)")
-</div>
-
-### Example 1 - Result (Tile Size = 8)
-<div style="width: 500px ; height: 500px">
-
-![Example 1 result8](/04/images/example1result8.png "Example 1 - Result (Tile Size = 8)")
-</div>
+### Example 1
+Coming soon
+### Example 2
+Coming soon
