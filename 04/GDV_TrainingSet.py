@@ -27,9 +27,6 @@ class Descriptor(Enum):
 
         if (self is Descriptor.TINY_COLOR32):
             return np.ravel(cv2.resize(img, (32, 32)))
-        
-        if (self is Descriptor.BIG_COLOR256):
-            return np.ravel(cv2.resize(img, (256, 256)))
 
 
     ''' Get the length of the descriptor vector '''
@@ -48,9 +45,6 @@ class Descriptor(Enum):
         
         if (self is Descriptor.TINY_COLOR32):
             return 32*32*3
-        
-        if (self is Descriptor.BIG_COLOR256):
-            return 256*256*3
 
 
 class TrainingSet:
@@ -136,6 +130,8 @@ class TrainingSet:
             self.descriptor = Descriptor.TINY_COLOR4
         elif str(descriptor_name) == 'TINY_COLOR8':
             self.descriptor = Descriptor.TINY_COLOR8
+        elif str(descriptor_name) == 'TINY_COLOR32':
+            self.descriptor = Descriptor.TINY_COLOR32
         else:
             print('ERROR: Unknown descriptor')
         print('Loaded training data:')
