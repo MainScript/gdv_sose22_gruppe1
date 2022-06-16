@@ -9,9 +9,11 @@ Python Version 3.10.2
 
 ## How to run the program
 * Open repository in VS-Code
+* Create a new folder called "data" as subfolder of the folder "04"
 * Download the Caltech-101 image data set from https://data.caltech.edu/records/20086. It contains a folder called "101_ObjectCategories", extract that folder into the "data" folder.
-* When running the programm for the first time (or wanting to create new training data), createNewTrainingData in main.py has to be set to True. Can be set to False next time running the progam, it then loads and uses the previously created training data.
-* When setting saveResult in main.py to true, the resulting image gets saved to the file specified in the saveResultTo variable
+* Before running the programm for the first time (or wanting to create new training data), createNewTrainingData in 04/main.py has to be set to True. Can be set to False next time running the progam, it then loads and uses the previously created training data.
+* When setting saveResult in 04/main.py to true, the resulting image gets saved to the file specified in the saveResultTo variable
+* Run 04/main.py
 
 
 ## Program Sequence
