@@ -10,9 +10,7 @@ Python Version 3.10.2
 ## How to run the program
 * Open repository in VS-Code
 * Create a new folder called "data" as subfolder of the folder "04"
-* Download the Caltech-101 image data set from https://data.caltech.edu/records/20086. It contains a folder called "101_ObjectCategories", extract that folder into the "data" folder.
-* Before running the programm for the first time (or wanting to create new training data), createNewTrainingData in 04/main.py has to be set to True. Can be set to False next time running the progam, it then loads and uses the previously created training data.
-* When setting saveResult in 04/main.py to true, the resulting image gets saved to the file specified in the saveResultTo variable
+* Download the Caltech-101 image data set from https://data.caltech.edu/records/20086. It contains a folder called "101_ObjectCategories", extract the folders in it into the "data" folder.
 * Run 04/main.py
 
 
@@ -22,12 +20,8 @@ Python Version 3.10.2
 * Splits input image into tiles
 * Uses the training data to find the best matching image from the data set for each tile
 * Creates an image from the matches found
-* Saves the resulting image (if saveResult is set to True)
+* Saves the resulting image
 * Shows the input image and the resulting image until a key is pressed, then closes the program
 
-
 ## Example Images
-### Example 1
-Coming soon
-### Example 2
-Coming soon
+Example Images are in the `input` and `output` folder.
