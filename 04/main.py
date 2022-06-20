@@ -31,7 +31,7 @@ def load_data():
     return training_set
 
 
-def make_tiles(img):
+def make_tiles(img, tilesize):
     """
     Create a numpy array using the input image.\n
     The array contains the image split up in tiles with the pre-defined size.
@@ -120,6 +120,10 @@ if __name__ == '__main__':
             input_img = cv2.imread(input_dir + file, cv2.IMREAD_COLOR)
             # use tile_allocator to create a tiles array and save it to output_dir
             # show the resulting image
+            input_width = math.floor(input_img.shape[1] /tilesize[1]) * tilesize[1]
+            input_height = math.floor(input_img.shape[0] /tilesize[0]) * tilesize[0]
+            input_img = cv2.resize(input_img, (input_width, input_height))
+
             tiles = tile_allocator(input_img, training_set)
             output_img = create_image_from_tiles(tiles, input_img.shape)
             cv2.imshow('result', output_img)
